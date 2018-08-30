@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="120dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="carregarVermelho"
+        android:text="Carregar Fragment Vermelho" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="carregarVerde"
+        android:text="carregar fragment verde" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="297dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="com.example.ricardo.fragmentsexercicio1.VermelhoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="297dp" />
+    </LinearLayout>
+
+</LinearLayout>
